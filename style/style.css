@@ -86,7 +86,8 @@ body{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    background-color: black;
+    background-image: url("../img/logo/logo.png");
+    background-size: 100px 100px;
 }
 .menu-links .link:not(.menu-links .link:first-child){
     margin-left: 15px;
@@ -109,6 +110,9 @@ body{
     }
 }
 @media(max-width: 768px){
+    .banner-txt{
+        font-size: 36px;
+    }
     .menu-links{
         width: 100%;
         flex-flow: row wrap;
@@ -117,6 +121,20 @@ body{
     }
     .menu-links .link{
         font-size: 14px;
+    }
+} 
+@media(max-width: 520px){
+    .banner-txt{
+        font-size: 22px;
+    }
+    .menu-links{
+        width: 100%;
+        flex-flow: row wrap;
+        height: 10vh;
+        justify-content: center;
+    }
+    .menu-links .link{
+        font-size: 10px;
     }
 } 
 
@@ -241,6 +259,12 @@ body{
 .styles .link a{
     border: 2px solid white;
 }
+@media(max-width: 768px){
+    .style-wrap .img{
+        width: 90px;
+        height: 90px;
+    }
+}
 section{
     position: relative;
 }
@@ -248,7 +272,7 @@ section{
 .photographs{
     display: flex;
     flex-flow: column nowrap;
-    min-height: 200vh;
+    min-height: 220vh;
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -261,11 +285,17 @@ section{
 }
 .photo-img .img{
     width: 100%;
-    min-height: 50vh;
-    background: url("../img/about/cameraman2.png");
+    min-height: 65vh;
+    background: url("../img/photographs/rich2.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.photograph-wrap:nth-child(3) .photo-img .img{
+    background-image: url("../img/photographs/antr.png");
+}
+.photograph-wrap:nth-child(4) .photo-img .img{
+    background-image: url("../img/photographs/sebas.png");
 }
 .photo-img{
     width: 50%;
@@ -289,6 +319,19 @@ section{
     flex-flow: row nowrap;
     width: 90%;
     min-height: 50vh;
+}
+.photographs .link{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.photographs .link:hover a{
+    background-color: black;
+    color: white;
+}
+.photographs .link a{
+    color: black;
+    border: 2px solid black;
 }
 
 .best-models{
@@ -358,4 +401,20 @@ section{
 }
 .best-wrap:nth-child(3) .img{
     background-image: url("../img/models/sony.jpeg");
+}
+.best-models .link{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.best-models .link a{
+    border: 2px solid white;
+}
+
+@media(max-width: 768px){
+    .best-wrap .img{
+        width: 125px;
+        height: 75px;
+        background-size: 125px 75px;
+    }
 }
