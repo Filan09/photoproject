@@ -325,11 +325,11 @@ section{
     top: 20px;
     right: 10px;
 }
-.photographs .link:hover a{
+.link-black:hover a{
     background-color: black;
     color: white;
 }
-.photographs .link a{
+.link-black a{
     color: black;
     border: 2px solid black;
 }
@@ -410,7 +410,9 @@ section{
 .best-models .link a{
     border: 2px solid white;
 }
-
+nav .link a{
+    border: none;
+}
 @media(max-width: 768px){
     .best-wrap .img{
         width: 125px;
