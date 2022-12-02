@@ -2,15 +2,22 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Icon -->
     <link rel="shortcut icon" href="img/logo/logo.png" type="image/x-icon">
     <title>Искусство фото</title>
 </head>
-
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <header>
         <section class="banner">
             <nav class="menu">
@@ -32,7 +39,7 @@
     </header>
     <main>
         <section class="about">
-            <div class="about-text">
+            <div class="about-text" data-aos="fade-up">
                 <h2 class="title">О Искусстве Фотографии</h2>
                 <p class="txt">
                     Для фотоискусства характерно значительное разнообразие технических средств и богатство
@@ -44,12 +51,12 @@
                     мастеров, кажется, могли бы быть сделаны другим талантливым профессионалом того же периода».
                 </p>
             </div>
-            <div class="about-img">
+            <div class="about-img" data-aos="fade-up">
                 <div class="img"></div>
             </div>
         </section>
         <section class="styles">
-            <h2 class="title">Основные жанры фото</h2>
+            <h2 class="title" data-aos="fade-up">Основные жанры фото</h2>
             <div class="styles-photo">
                 <div class="style-wrap">
                     <div class="img"></div>
@@ -67,8 +74,8 @@
             <div class="link"><a href="pages/styles.html">Смотреть все</a></div>
         </section>
         <section class="photographs">
-            <h2 class="title">Известные фотографы</h2>
-            <div class="photograph-wrap">
+            <h2 class="title" data-aos="fade-up">Известные фотографы</h2>
+            <div class="photograph-wrap" data-aos="fade-up">
                 <div class="photo-img">
                     <div class="img"></div>
                 </div>
@@ -79,7 +86,7 @@
                     </p>
                 </div>
             </div>
-            <div class="photograph-wrap">
+            <div class="photograph-wrap" data-aos="fade-up">
                 <div class="photo-img">
                     <div class="img"></div>
                 </div>
@@ -90,7 +97,7 @@
                     </p>
                 </div>
             </div>
-            <div class="photograph-wrap">
+            <div class="photograph-wrap" data-aos="fade-up">
                 <div class="photo-img">
                     <div class="img"></div>
                 </div>
@@ -100,12 +107,12 @@
                         Создатель почти фантастических образов, взятых на самом деле из реального мира. Салгаду был фоторепортером, которого особенно влекло к аномалиям, несчастьям, нищете и экологическим катастрофам, но даже такие его сюжеты завораживают красотой. В 2014 году о нем снял фильм режиссер Вим Вендерс под названием «Соль Земли» (специальный приз Каннского фестиваля).
                     </p>
                 </div>
-                <div class="link link-black"><a href="pages/photographs.html">Смотреть все</a></div>
             </div>
+            <div class="link link-black"><a href="pages/photographs.html">Смотреть все</a></div>
         </section>
         <section class="best-models">
-            <h2 class="title">Известные производители фотоаппаратов</h2>
-            <div class="best-content">
+            <h2 class="title" data-aos="fade-up">Известные производители фотоаппаратов</h2>
+            <div class="best-content" data-aos="fade-up">
                 <div class="best-wrap">
                     <div class="img"></div>
                     <h2 class="title">Nikon</h2>

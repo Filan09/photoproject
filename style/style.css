@@ -10,9 +10,6 @@ body{
     background-color: rgb(243, 243, 243);
 }
 
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -93,7 +90,7 @@ body{
 .menu-links .link:not(.menu-links .link:first-child){
     margin-left: 15px;
 }
-@media(max-width: 950px) {
+@media(max-width: 1050px) {
     .logo{
         display: none;
     }
@@ -260,20 +257,30 @@ body{
 .styles .link a{
     border: 2px solid white;
 }
-@media(max-width: 768px){
-    .style-wrap .img{
+@media (max-width: 768px){
+    .styles .style-wrap .img{
         width: 90px;
         height: 90px;
     }
+    .title{
+        font-size: 24px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    .txt{
+        font-size: 14px;
+    }
+      
 }
 section{
     position: relative;
 }
 
-.photographs{
+.photographs, .photographspage{
     display: flex;
     flex-flow: column nowrap;
-    min-height: 220vh;
+    min-height: 270vh;
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -284,7 +291,7 @@ section{
 .photograph-wrap:nth-child(odd) .photo-img{
     order: -2;
 }
-.photo-img .img{
+.photograph-wrap .photo-img .img{
     width: 100%;
     min-height: 65vh;
     background: url("../img/photographs/rich2.png");
@@ -298,7 +305,7 @@ section{
 .photograph-wrap:nth-child(4) .photo-img .img{
     background-image: url("../img/photographs/sebas.png");
 }
-.photo-img{
+.photograph-wrap .photo-img{
     width: 50%;
     min-height: 50vh;
     display: flex;
@@ -306,7 +313,7 @@ section{
     flex-flow: column nowrap;
     justify-content: space-around;
 }
-.photo-text{
+.photograph-wrap .photo-text{
     order: -1;
     width: 50%;
     min-height: 50vh;
@@ -370,11 +377,12 @@ section{
     flex-flow: column nowrap;
     align-items: center;
     width: 27%;
+    min-height: 20vh;
 }
 .best-wrap:nth-child(2){
     position: absolute;
     right: 0;
-    top: 40%;
+    top: -100px;
     left: 0;
     margin: auto;
 }
@@ -460,6 +468,7 @@ nav .link a{
 }
 .stylepage-content .style-wrap{
     display: flex;
+    border-radius: 40px;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
@@ -491,4 +500,86 @@ body[for="style"]{
     background-image: url("../img/styles/stylepage_bg.jpg");
     background-position: center center;
     background-size: cover;
+}
+
+.photographspage{
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 600vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.photographspage::after{
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgb(86, 109, 128);
+    box-shadow: 0 0 0px 12px rgba(86, 109, 128, 0.66),
+    0 0 0px 24px rgba(86, 109, 128, 0.22);
+    top: 60px;
+}
+.photographspage::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 580vh;
+    background-color: rgb(86, 109, 128);
+    box-shadow: 0 0 3px 7px rgb(86, 109, 128, 0.5);
+    z-index: -1;
+    top: 80px;
+}
+.photographspage-content{
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 550vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.photographspage-wrap{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 80%;
+    justify-content: space-around;
+    min-height: 75vh;
+    background-color: rgb(200, 208, 211);
+    box-shadow: 0 0 1px 10px rgba(200, 208, 211, 0.519);
+    padding: 60px 0;
+    border-radius: 40px;
+}
+.photographspage-wrap .photo-img{
+    width: 100%;
+    min-height: 40vh;
+}
+.photographspage-wrap .photo-img .img{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url("../img/photographs/rich2.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.photographspage-wrap .photo-text{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.photographspage-wrap:nth-child(3) .img{
+    background-image: url("../img/photographs/antr.png");
+}
+.photographspage-wrap:nth-child(4) .img{
+    background-image: url("../img/photographs/sebas.png");
+}
+.photographspage-wrap:nth-child(5) .img{
+    background-image: url("../img/photographs/smit.png");
+}
+.photographspage-wrap:nth-child(6) .img{
+    background-image: url("../img/photographs/aleks-rod.png");
 }
