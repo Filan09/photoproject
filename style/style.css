@@ -55,7 +55,7 @@ body{
     align-items: center;
     width: 100%;
     height: 90vh;
-    background-image: url("../img/bannerbg/banner_bg.jpg");
+    background-image: url("../img/bannerbg/banner_bg.avif");
     background-position: center center;
     background-size: cover;
     background-repeat:  no-repeat;
@@ -66,7 +66,7 @@ body{
     height: 90vh;
     position: absolute;
     background-color: black;
-    opacity: 0.55;
+    opacity: 0.45;
     z-index: 2;
 }
 .banner-txt{
@@ -122,34 +122,6 @@ body{
 .menu-links .link:not(.menu-links .link:first-child){
     margin-left: 15px;
 }
-@media(max-width: 800px) {
-    .logo{
-        display: none;
-    }
-    .menu-links{
-        min-height: 100px;
-        margin: auto;
-        width: 90%;
-        justify-content: space-between;
-    }
-    .menu-links .link{
-        font-size: 11px;
-    }
-    .menu-links .link{
-        font-size: 11px;
-    }
-}
-@media(max-width: 640px){
-    .menu-links{
-        width: 100%;
-        flex-flow: row wrap;
-        height: 10vh;
-        justify-content: center;
-    }
-    .menu-links .link{
-        font-size: 10px;
-    }
-} 
 
 .about{
     width: 100%;
@@ -174,6 +146,7 @@ body{
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
+    text-shadow: 1px 1px 2px black;
     z-index: 3;
 }
 .txt{
@@ -194,7 +167,7 @@ body{
 .about-img .img{
     width: 100%;
     min-height: 60vh;
-    background-image: url("../img/about/cameraman2.png");
+    background-image: url("../img/about/cameraman.avif");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -230,7 +203,7 @@ body{
     min-height: 75vh;
     background-color: black;
     width: 100%;
-    opacity: 0.55;
+    opacity: 0.2;
     z-index: 2;
 }
 .styles-photo{
@@ -262,7 +235,7 @@ body{
     background-image: url("../img/styles/naturemort.jpg");
 }
 .style-wrap:nth-child(3) .img{
-    background-image: url("../img/styles/peizazh.jpg");
+    background-image: url("../img/styles/landscape.jpg");
 }
 .styles .link{
     position: absolute;
@@ -272,22 +245,6 @@ body{
 }
 .styles .link a{
     border: 2px solid white;
-}
-@media (max-width: 768px){
-    .styles .style-wrap .img{
-        width: 90px;
-        height: 90px;
-    }
-    .title{
-        font-size: 24px;
-    }
-    .subtitle{
-        font-size: 20px;
-    }
-    .txt{
-        font-size: 14px;
-    }
-      
 }
 section:not(.banner){
     position: relative;
@@ -311,16 +268,16 @@ section:not(.banner){
 .photograph-wrap .photo-img .img{
     width: 100%;
     min-height: 65vh;
-    background: url("../img/photographs/rich2.png");
+    background: url("../img/photographs/richard.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 .photograph-wrap:nth-child(3) .photo-img .img{
-    background-image: url("../img/photographs/antr.png");
+    background-image: url("../img/photographs/antri.png");
 }
 .photograph-wrap:nth-child(4) .photo-img .img{
-    background-image: url("../img/photographs/sebas.png");
+    background-image: url("../img/photographs/sebastian.png");
 }
 .photograph-wrap .photo-img{
     width: 50%;
@@ -337,7 +294,7 @@ section:not(.banner){
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 .photograph-wrap{
     display: flex;
@@ -426,7 +383,7 @@ section:not(.banner){
     margin-bottom: 25px;
 }
 .best-wrap:nth-child(3) .img{
-    background-image: url("../img/models/sony.jpeg");
+    background-image: url("../img/models/sony.jpg");
 }
 .best-models .link{
     position: absolute;
@@ -438,13 +395,6 @@ section:not(.banner){
 }
 nav .link a{
     border: none;
-}
-@media(max-width: 768px){
-    .best-wrap .img{
-        width: 125px;
-        height: 75px;
-        background-size: 125px 75px;
-    }
 }
 
 .stylepage{
@@ -504,7 +454,7 @@ nav .link a{
     background-image: url("../img/styles/stylepage_portret.jpg");
 }
 .stylepage-content .style-wrap:nth-child(2) .img{
-    background-image: url("../img/styles/stylepage_peizazh.jpg");
+    background-image: url("../img/styles/stylepage_landscape.jpg");
 }
 .stylepage-content .style-wrap:nth-child(3) .img{
     background-image: url("../img/styles/stylepage_naturemort.jpg");
@@ -518,7 +468,7 @@ nav .link a{
 body[for="style"]{
     background-image: url("../img/styles/stylepage_bg.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .photographspage{
@@ -579,7 +529,7 @@ body[for="style"]{
 .photographspage-wrap .photo-img .img{
     width: 100%;
     min-height: 60vh;
-    background-image: url("../img/photographs/rich2.png");
+    background-image: url("../img/photographs/richard.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -593,16 +543,16 @@ body[for="style"]{
     align-items: center;
 }
 .photographspage-wrap:nth-child(2) .img{
-    background-image: url("../img/photographs/antr.png");
+    background-image: url("../img/photographs/antri.png");
 }
 .photographspage-wrap:nth-child(3) .img{
-    background-image: url("../img/photographs/sebas.png");
+    background-image: url("../img/photographs/sebastian.png");
 }
 .photographspage-wrap:nth-child(4) .img{
-    background-image: url("../img/photographs/smit.png");
+    background-image: url("../img/photographs/uilyam.png");
 }
 .photographspage-wrap:nth-child(5) .img{
-    background-image: url("../img/photographs/aleks-rod.png");
+    background-image: url("../img/photographs/aleks.png");
 }
 
 .galery{
@@ -636,26 +586,26 @@ body[for="style"]{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/galery/1.webp");
+    background-image: url("../img/galery/1.jpg");
 }
 .galery-wrap:nth-child(2) .img{
-    background-image: url("../img/galery/2.webp");
+    background-image: url("../img/galery/2.jpg");
 }
 .galery-wrap:nth-child(3) .img{
-    background-image: url("../img/galery/3.webp");
+    background-image: url("../img/galery/3.jpg");
 }
 .galery-wrap:nth-child(4) .img{
-    background-image: url("../img/galery/4.webp");
+    background-image: url("../img/galery/4.jpg");
 }
 .galery-wrap:nth-child(5) .img{
     background-position: center top;
-    background-image: url("../img/galery/5.webp");
+    background-image: url("../img/galery/5.jpg");
 }
 .galery-wrap:nth-child(6) .img{
-    background-image: url("../img/galery/6.webp");
+    background-image: url("../img/galery/6.jpg");
 }
 .galery-wrap:nth-child(7) .img{
-    background-image: url("../img/galery/7.webp");
+    background-image: url("../img/galery/7.jpg");
 }
 .galery-wrap:nth-child(8) .img{
     background-image: url("../img/galery/8.jpg");
@@ -666,3 +616,73 @@ body[for="style"]{
 .galery-wrap:nth-child(10) .img{
     background-image: url("../img/galery/10.jpg");
 }
+
+@media(max-width: 800px) {
+    .logo{
+        display: none;
+    }
+    .menu-links{
+        min-height: 100px;
+        margin: auto;
+        width: 90%;
+        justify-content: space-between;
+    }
+    .menu-links .link{
+        font-size: 11px;
+    }
+    .menu-links .link{
+        font-size: 11px;
+    }
+    .styles .style-wrap .img{
+        width: 90px;
+        height: 90px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    .txt{
+        font-size: 14px;
+    }
+    .best-wrap .img{
+        width: 125px;
+        height: 75px;
+        background-size: 125px 75px;
+    }
+}
+@media(max-width: 640px){
+    .best-models{
+        min-height: 100vh;
+    }
+    .best-models::after{
+        min-height: 100vh;
+    }
+    .menu-links{
+        width: 100%;
+        flex-flow: row wrap;
+        height: 10vh;
+        justify-content: center;
+    }
+    .menu-links .link{
+        font-size: 10px;
+    }
+    .title{
+        font-size: 22px;
+    }
+    .subtitle{
+        font-size: 16px;
+    }
+    .txt{
+        font-size: 12px;
+    }
+} 
+@media(max-height: 500px){
+    .best-models{
+        min-height: 150vh;
+    }
+    .best-models::after{
+        min-height: 150vh;
+    }
+} 
