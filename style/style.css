@@ -23,7 +23,7 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.loaded header, .loaded main{
+/* .loaded header, .loaded main{
     display: none;
 }
 .loaded{
@@ -46,7 +46,7 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     animation: load 1s infinite linear;
-}
+} */
 .banner{
     position: relative;
     margin-top: 10px;
